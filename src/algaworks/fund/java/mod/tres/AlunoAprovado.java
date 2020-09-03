@@ -23,7 +23,5 @@ public class AlunoAprovado {
 			System.out.println("Aluno reprovado.");
 		}
 	}
-	
-	// Adicionado git para teste.
 
 }
