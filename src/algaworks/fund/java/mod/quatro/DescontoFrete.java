@@ -13,18 +13,24 @@ public class DescontoFrete {
 		
 		Integer frete = 15;
 		
-		Double valorFinal = null;
+		Double valorFinal = produto;
+		
+		/*Boolean frete = produto < 100;
+		  if (frete) {
+		  valorFinal += 15;
+		  }
+		 	System.out.println("Valor final da compra = R$" + valorFinal);
+		*/
 		
 		if (produto < 100) {
 			System.out.println("Valor do produto: R$" + produto);
 			System.out.println("Valor do frete = R$" + frete);
-			valorFinal = produto + frete;
+			valorFinal += frete;
 			System.out.println("Valor final da compra = R$" + valorFinal);
 		} else {
 			System.out.println("Valor do produto: R$" + produto);
 			frete = 0;
 			System.out.println("Valor do frete = R$" + frete);
-			valorFinal = produto + frete;
 			System.out.println("Valor final da compra = R$" + valorFinal);
 		}
 
